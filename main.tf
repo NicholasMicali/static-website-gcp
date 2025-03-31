@@ -1,5 +1,5 @@
 # Main Terraform configuration file
-# Testing commit message when pushing to github
+# Testing pull commit message from github
 # Use the GCS website module to create a bucket configured for static website hosting
 module "static_website" {
   source      = "./modules/gcs_website"
