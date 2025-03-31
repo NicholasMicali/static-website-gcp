@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Static Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+    .container {
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Static Website</h1>
+    <p>This is a simple static website hosted on Google Cloud Storage and managed with Terraform.</p>
+    <p>This site demonstrates how to deploy a low-cost, high-performance static website using:</p>
+    <ul>
+      <li>Google Cloud Storage for hosting</li>
+      <li>Terraform for infrastructure as code</li>
+      <li>Basic HTML/CSS for web content</li>
+    </ul>
+    <p>Deployment completed on: <span id="datetime"></span></p>
+  </div>
+
+  <script>
+    // Add current date to the page
+    document.getElementById("datetime").textContent = new Date().toLocaleString();
+  </script>
+</body>
+</html>
